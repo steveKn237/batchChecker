@@ -1,0 +1,27 @@
+{
+    "name": "yoanbmps/batch-checker",
+    "description": "Projet à réaliser sans IA dans le cadre de la préparation au TPI. BatchChecker",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Yoanbmps\\BatchChecker\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "stevekn237",
+            "email": "steve.ndmbm@eduge.ch"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "slim/slim": "4.*",
+        "slim/psr7": "^1.7",
+        "nyholm/psr7": "^1.8",
+        "nyholm/psr7-server": "^1.1",
+        "guzzlehttp/psr7": "^2",
+        "laminas/laminas-diactoros": "^3.5",
+        "slim/php-view": "^3.4",
+        "monolog/monolog": "^3.0"
+    }
+}
