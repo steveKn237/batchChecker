@@ -1,9 +1,20 @@
-<div class = "container"> 
-    <header class="mb-4">
-        <h1> Website Batch Checker</h1>
-        <nav class="mb-2">
-            <a class =" btn btn-sm btn-outline-primary" href=""></a>
-            <a class =" btn btn-sm btn-outline-secondary" href=""></a>
-        </nav>
-    </header>
-</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <strong>Website Batch Checker</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Batches</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/batch/create">Nouveau Batch</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,27 @@
+# Composer
+/vendor/
+composer.phar
+
+# Logs
+logs/*.log
+!logs/.gitkeep
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+/tmp/
+*.tmp
+*.bak
+*~
+
+# Data files
+/data/*.json
+!data/.gitkeep
