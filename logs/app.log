@@ -8,3 +8,6 @@
 [2025-12-16T08:24:03.760510+00:00] batch-checker.INFO: Website added to batch {"batch_id":1,"website_id":2,"url":"http://localhost:8000"} []
 [2025-12-16T08:24:11.023889+00:00] batch-checker.ERROR: Network error checking website {"url":"https://www.google.com","error":"Could not resolve host: www.google.com"} []
 [2025-12-16T08:24:21.026874+00:00] batch-checker.ERROR: Network error checking website {"url":"http://localhost:8000","error":"Operation timed out after 10002 milliseconds with 0 bytes received"} []
+[2025-12-16T08:25:31.568469+00:00] batch-checker.INFO: Website updated {"batch_id":1,"website_id":1,"url":"http://example.com"} []
+[2025-12-16T08:25:46.756395+00:00] batch-checker.INFO: Website deleted from batch {"batch_id":1,"website_id":2,"url":"http://localhost:8000"} []
+[2025-12-16T08:26:02.264511+00:00] batch-checker.INFO: Batch deleted {"id":2,"name":"Sites API"} []
