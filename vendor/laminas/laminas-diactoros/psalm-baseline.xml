@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files psalm-version="6.13.1@1e3b7f0a8ab32b23197b91107adc0a7ed8a05b51">
+  <file src="src/AbstractSerializer.php">
+    <RedundantCondition>
+      <code><![CDATA[! $crFound]]></code>
+      <code><![CDATA[! $crFound]]></code>
+    </RedundantCondition>
+  </file>
+  <file src="src/CallbackStream.php">
+    <ImplementedReturnTypeMismatch>
+      <code><![CDATA[null|callable]]></code>
+    </ImplementedReturnTypeMismatch>
+    <PossiblyUnusedReturnValue>
+      <code><![CDATA[int]]></code>
+      <code><![CDATA[int]]></code>
+      <code><![CDATA[string]]></code>
+    </PossiblyUnusedReturnValue>
+  </file>
+  <file src="src/Exception/InvalidProxyAddressException.php">
+    <PossiblyUnusedMethod>
+      <code><![CDATA[forInvalidProxyArgument]]></code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="src/HeaderSecurity.php">
+    <UnusedConstructor>
+      <code><![CDATA[__construct]]></code>
+    </UnusedConstructor>
+  </file>
+  <file src="src/Module.php">
+    <UnusedClass>
+      <code><![CDATA[Module]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Request/ArraySerializer.php">
+    <MixedArgument>
+      <code><![CDATA[$headers]]></code>
+      <code><![CDATA[$method]]></code>
+      <code><![CDATA[$protocolVersion]]></code>
+      <code><![CDATA[$requestTarget]]></code>
+      <code><![CDATA[$uri]]></code>
+      <code><![CDATA[self::getValueFromKey($serializedRequest, 'body')]]></code>
+    </MixedArgument>
+    <MixedAssignment>
+      <code><![CDATA[$headers]]></code>
+      <code><![CDATA[$method]]></code>
+      <code><![CDATA[$protocolVersion]]></code>
+      <code><![CDATA[$requestTarget]]></code>
+      <code><![CDATA[$uri]]></code>
+    </MixedAssignment>
+  </file>
+  <file src="src/Request/Serializer.php">
+    <MixedArgument>
+      <code><![CDATA[$body]]></code>
+      <code><![CDATA[$headers]]></code>
+      <code><![CDATA[$method]]></code>
+      <code><![CDATA[$requestTarget]]></code>
+      <code><![CDATA[$version]]></code>
+    </MixedArgument>
+    <MixedArgumentTypeCoercion>
+      <code><![CDATA[$request->getHeaders()]]></code>
+    </MixedArgumentTypeCoercion>
+  </file>
+  <file src="src/Response/ArraySerializer.php">
+    <MixedArgument>
+      <code><![CDATA[$headers]]></code>
+      <code><![CDATA[$protocolVersion]]></code>
+      <code><![CDATA[$reasonPhrase]]></code>
+      <code><![CDATA[$statusCode]]></code>
+      <code><![CDATA[self::getValueFromKey($serializedResponse, 'body')]]></code>
+    </MixedArgument>
+    <MixedAssignment>
+      <code><![CDATA[$headers]]></code>
+      <code><![CDATA[$protocolVersion]]></code>
+      <code><![CDATA[$reasonPhrase]]></code>
+      <code><![CDATA[$statusCode]]></code>
+    </MixedAssignment>
+  </file>
+  <file src="src/Response/EmptyResponse.php">
+    <UnsafeInstantiation>
+      <code><![CDATA[new static(204, $headers)]]></code>
+    </UnsafeInstantiation>
+  </file>
+  <file src="src/Response/JsonResponse.php">
+    <FalsableReturnStatement>
+      <code><![CDATA[json_encode($data, $encodingOptions | JSON_THROW_ON_ERROR)]]></code>
+    </FalsableReturnStatement>
+    <InvalidFalsableReturnType>
+      <code><![CDATA[string]]></code>
+    </InvalidFalsableReturnType>
+  </file>
+  <file src="src/Response/Serializer.php">
+    <MixedArgument>
+      <code><![CDATA[$body]]></code>
+      <code><![CDATA[$headers]]></code>
+      <code><![CDATA[$reasonPhrase]]></code>
+      <code><![CDATA[$status]]></code>
+      <code><![CDATA[$version]]></code>
+    </MixedArgument>
+    <MixedArgumentTypeCoercion>
+      <code><![CDATA[$response->getHeaders()]]></code>
+    </MixedArgumentTypeCoercion>
+    <RedundantCast>
+      <code><![CDATA[(int) $status]]></code>
+    </RedundantCast>
+  </file>
+  <file src="src/ServerRequestFactory.php">
+    <MixedArgument>
+      <code><![CDATA[$headers['cookie']]]></code>
+    </MixedArgument>
+    <MixedArgumentTypeCoercion>
+      <code><![CDATA[$headers]]></code>
+      <code><![CDATA[$headers]]></code>
+      <code><![CDATA[$server]]></code>
+    </MixedArgumentTypeCoercion>
+  </file>
+  <file src="src/ServerRequestFilter/IPRange.php">
+    <UnusedConstructor>
+      <code><![CDATA[__construct]]></code>
+    </UnusedConstructor>
+  </file>
+  <file src="src/Stream.php">
+    <PossiblyUnusedProperty>
+      <code><![CDATA[$stream]]></code>
+    </PossiblyUnusedProperty>
+  </file>
+  <file src="src/functions/create_uploaded_file.php">
+    <MixedArgument>
+      <code><![CDATA[$spec['error']]]></code>
+      <code><![CDATA[$spec['name'] ?? null]]></code>
+      <code><![CDATA[$spec['tmp_name']]]></code>
+      <code><![CDATA[$spec['type'] ?? null]]></code>
+    </MixedArgument>
+  </file>
+  <file src="src/functions/marshal_headers_from_sapi.php">
+    <LessSpecificReturnStatement>
+      <code><![CDATA[array_filter($headers, fn(string|int $key): bool => is_string($key), ARRAY_FILTER_USE_KEY)]]></code>
+    </LessSpecificReturnStatement>
+    <MixedAssignment>
+      <code><![CDATA[$headers[$name]]]></code>
+      <code><![CDATA[$headers[$name]]]></code>
+      <code><![CDATA[$value]]></code>
+    </MixedAssignment>
+    <MoreSpecificReturnType>
+      <code><![CDATA[array<non-empty-string, mixed>]]></code>
+    </MoreSpecificReturnType>
+    <RedundantCondition>
+      <code><![CDATA[is_string($key)]]></code>
+    </RedundantCondition>
+  </file>
+  <file src="src/functions/marshal_method_from_sapi.php">
+    <MixedReturnStatement>
+      <code><![CDATA[$server['REQUEST_METHOD'] ?? 'GET']]></code>
+      <code><![CDATA[$server['REQUEST_METHOD'] ?? 'GET']]></code>
+    </MixedReturnStatement>
+  </file>
+  <file src="src/functions/marshal_protocol_version_from_sapi.php">
+    <MixedArgument>
+      <code><![CDATA[$server['SERVER_PROTOCOL']]]></code>
+    </MixedArgument>
+  </file>
+  <file src="src/functions/normalize_server.php">
+    <MixedArrayAccess>
+      <code><![CDATA[$apacheRequestHeaders['Authorization']]]></code>
+      <code><![CDATA[$apacheRequestHeaders['authorization']]]></code>
+    </MixedArrayAccess>
+    <MixedAssignment>
+      <code><![CDATA[$apacheRequestHeaders]]></code>
+      <code><![CDATA[$server['HTTP_AUTHORIZATION']]]></code>
+      <code><![CDATA[$server['HTTP_AUTHORIZATION']]]></code>
+    </MixedAssignment>
+  </file>
+  <file src="src/functions/normalize_uploaded_files.php">
+    <InvalidReturnStatement>
+      <code><![CDATA[$normalized]]></code>
+    </InvalidReturnStatement>
+    <InvalidReturnType>
+      <code><![CDATA[UploadedFileInterface[]]]></code>
+    </InvalidReturnType>
+    <MixedArgument>
+      <code><![CDATA[$files['name'] ?? null]]></code>
+      <code><![CDATA[$files['type'] ?? null]]></code>
+    </MixedArgument>
+    <MixedAssignment>
+      <code><![CDATA[$normalized[$key]]]></code>
+      <code><![CDATA[$value]]></code>
+      <code><![CDATA[$value]]></code>
+    </MixedAssignment>
+  </file>
+  <file src="src/functions/parse_cookie_header.php">
+    <LessSpecificReturnStatement>
+      <code><![CDATA[$cookies]]></code>
+    </LessSpecificReturnStatement>
+    <MoreSpecificReturnType>
+      <code><![CDATA[array<non-empty-string, string>]]></code>
+    </MoreSpecificReturnType>
+  </file>
+  <file src="test/CallbackStreamTest.php">
+    <MixedAssignment>
+      <code><![CDATA[$ret]]></code>
+      <code><![CDATA[$ret]]></code>
+    </MixedAssignment>
+  </file>
+  <file src="test/MessageTraitTest.php">
+    <MixedArgument>
+      <code><![CDATA[$value]]></code>
+    </MixedArgument>
+  </file>
+  <file src="test/Request/SerializerTest.php">
+    <MissingClosureReturnType>
+      <code><![CDATA[static function () use ($payload) {]]></code>
+    </MissingClosureReturnType>
+    <MixedArrayOffset>
+      <code><![CDATA[$payload[$i++]]]></code>
+    </MixedArrayOffset>
+    <MixedAssignment>
+      <code><![CDATA[$i]]></code>
+    </MixedAssignment>
+    <MixedOperand>
+      <code><![CDATA[$i]]></code>
+    </MixedOperand>
+  </file>
+  <file src="test/RequestTest.php">
+    <MixedArgument>
+      <code><![CDATA[$headers]]></code>
+    </MixedArgument>
+  </file>
+  <file src="test/ResponseTest.php">
+    <MixedAssignment>
+      <code><![CDATA[$responseCode]]></code>
+    </MixedAssignment>
+    <StringIncrement>
+      <code><![CDATA[$value]]></code>
+    </StringIncrement>
+  </file>
+  <file src="test/ServerRequestFactoryTest.php">
+    <InvalidArgument>
+      <code><![CDATA[$normalizedFiles['fooFiles']]]></code>
+    </InvalidArgument>
+  </file>
+  <file src="test/ServerRequestTest.php">
+    <InvalidArgument>
+      <code><![CDATA[$parsedBody]]></code>
+    </InvalidArgument>
+  </file>
+  <file src="test/StaticAnalysis/RequestInterfaceStaticReturnTypes.php">
+    <UnusedClass>
+      <code><![CDATA[RequestInterfaceStaticReturnTypes]]></code>
+    </UnusedClass>
+  </file>
+  <file src="test/StreamTest.php">
+    <RedundantConditionGivenDocblockType>
+      <code><![CDATA[is_resource($resource)]]></code>
+    </RedundantConditionGivenDocblockType>
+  </file>
+  <file src="test/TestAsset/CallbacksForCallbackStream.php">
+    <PossiblyUnusedMethod>
+      <code><![CDATA[sampleCallback]]></code>
+      <code><![CDATA[sampleStaticCallback]]></code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="test/TestAsset/HeaderStack.php">
+    <UnusedClass>
+      <code><![CDATA[HeaderStack]]></code>
+    </UnusedClass>
+  </file>
+  <file src="test/UploadedFileTest.php">
+    <MixedArgument>
+      <code><![CDATA[$streamOrFile]]></code>
+    </MixedArgument>
+  </file>
+  <file src="test/UriTest.php">
+    <MixedArgument>
+      <code><![CDATA[$test]]></code>
+    </MixedArgument>
+    <MixedAssignment>
+      <code><![CDATA[$test]]></code>
+    </MixedAssignment>
+  </file>
+  <file src="test/functions/NormalizeUploadedFilesTest.php">
+    <MixedArgument>
+      <code><![CDATA[$normalised['my-form']['details']['avatars']]]></code>
+      <code><![CDATA[$normalised['slide-shows'][0]['slides']]]></code>
+    </MixedArgument>
+    <MixedArrayAccess>
+      <code><![CDATA[$normalised['my-form']['details']['avatar']]]></code>
+      <code><![CDATA[$normalised['my-form']['details']['avatars']]]></code>
+      <code><![CDATA[$normalised['my-form']['details']['avatars']]]></code>
+      <code><![CDATA[$normalised['my-form']['details']['avatars']]]></code>
+      <code><![CDATA[$normalised['my-form']['details']['avatars']]]></code>
+      <code><![CDATA[$normalised['my-form']['details']['avatars'][0]]]></code>
+      <code><![CDATA[$normalised['my-form']['details']['avatars'][1]]]></code>
+      <code><![CDATA[$normalised['my-form']['details']['avatars'][2]]]></code>
+      <code><![CDATA[$normalised['slide-shows'][0]['slides']]]></code>
+      <code><![CDATA[$normalised['slide-shows'][0]['slides']]]></code>
+      <code><![CDATA[$normalised['slide-shows'][0]['slides']]]></code>
+      <code><![CDATA[$normalised['slide-shows'][0]['slides'][0]]]></code>
+      <code><![CDATA[$normalised['slide-shows'][0]['slides'][1]]]></code>
+    </MixedArrayAccess>
+    <MixedMethodCall>
+      <code><![CDATA[getClientFilename]]></code>
+      <code><![CDATA[getClientFilename]]></code>
+      <code><![CDATA[getClientFilename]]></code>
+      <code><![CDATA[getClientFilename]]></code>
+      <code><![CDATA[getClientFilename]]></code>
+      <code><![CDATA[getClientFilename]]></code>
+    </MixedMethodCall>
+    <UndefinedInterfaceMethod>
+      <code><![CDATA[$normalised['my-form']]]></code>
+      <code><![CDATA[$normalised['my-form']]]></code>
+      <code><![CDATA[$normalised['my-form']]]></code>
+      <code><![CDATA[$normalised['my-form']]]></code>
+      <code><![CDATA[$normalised['my-form']]]></code>
+      <code><![CDATA[$normalised['slide-shows']]]></code>
+      <code><![CDATA[$normalised['slide-shows']]]></code>
+      <code><![CDATA[$normalised['slide-shows']]]></code>
+    </UndefinedInterfaceMethod>
+  </file>
+</files>
